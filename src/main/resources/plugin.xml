@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="Search Zentralblatt MATH" version="0.1">
+
+  <requires>
+    <import plugin-id="net.sf.jabref.core"/>
+  </requires>
+
+  <runtime>
+    <library type="code" path="./" id="code"/>
+  </runtime>
+
+  <extension id="ZentralSearch" plugin-id="net.sf.jabref.core"
+             point-id="EntryFetcher">
+    <parameter id="entryFetcher"
+               value="net.launchpad.jabref.plugins.ZentralSearch" />
+    <parameter id="name"
+               value="Math Zentralblatt Search" />
+    <parameter id="description"
+               value="Searches Math Zentralblatt Entries." />
+  </extension>
+
+</plugin>
